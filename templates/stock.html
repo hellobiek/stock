@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票可视化小玩具</title>
+</head>
+<body>
+    <form action="/query", method="POST">
+        <div class="form-group">
+            <label for="date">开始时间</label>
+            <input type="date" name="start_date" id="start_date" value=""/>
+        </div>
+        <div class="form-group">
+            <label for="date">结束时间</label>
+            <input type="date" name="end_date" id="end_date" value=""/>
+        </div>
+        <input type='text' name="codes_str" value='000001,多股用逗号分隔'/>
+        <input type='submit' value='查询'/>{{msg}}
+        <div id="show" style="width:800px ; height : 600px ; background: white">
+    </form>
+</body>
+<script>
+</script>
+</html>
