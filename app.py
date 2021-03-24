@@ -12,7 +12,7 @@ def index():
 def login():
     uname = request.form.get("username")
     pwd = request.form.get("pwd")
-    if uname == "郝金鑫" and pwd == "123456":
+    if uname == "郝金星" and pwd == "123456":
         return render_template("stock.html")
     else:
         return render_template("login.html", msg="登陆失败")
